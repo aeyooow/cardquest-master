@@ -60,6 +60,7 @@ class PokemonCard(BaseModel):
     release_date = models.DateField(null=True, blank=True)
     evolution_stage = models.CharField(max_length=250, null=True, blank=True)
     abilities = models.CharField(max_length=250, null=True, blank=True)
+    image_url = models.URLField(null=True, blank=True)
 
     def __str__(self):
         return self.name
